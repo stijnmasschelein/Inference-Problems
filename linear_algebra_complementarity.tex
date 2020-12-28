@@ -41,9 +41,19 @@ The $k$ choices for company $i$ are the vector $x_i$. The $p$ environmental fact
 
 \begin{aligned}
 \label{eq:management-function}
-y_i &= (b + z G) x + \frac{1}{2} x' A x \\
-&= b_Z + \frac{1}{2} x' A x \\
+y_i &= (b + z_i G) x_i - \frac{1}{2} x_i' A x_i \\
+&= (b_{Zi} + \epsilon_i) x_i - \frac{1}{2} x_i' A x_i
 \end{aligned}
+
+When $A$ is positive definite, the optimal choice for $x_i$ is given by
+
+\begin{aligned}
+\label{eq:optimal}
+Ax_i &= b_{Zi} + \epsilon_i \\
+x_i^* &= A^{-1} (b_{Zi} + \epsilon_i)
+\end{aligned}
+
+
 
 \section{Extensions to the base model}
 
