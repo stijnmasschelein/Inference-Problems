@@ -37,12 +37,13 @@ changes
 
 \section{The base model}
 
-The $k$ choices for company $i$ are the vector $x_i$. The $p$ environmental factors are in $z_i$. The linear effects are in $b_{k \times 1}$. The quadratic (complementarity) effects are in $A_{k \times k}$. The contingency effects are in $G_{p \times k}$. 
+The $k$ choices for company $i$ are the vector $x_i$. The $p$ environmental factors are in $z_i$. The linear effects are in $b_{k \times 1}$. The quadratic (complementarity) effects are in $A_{k \times k}$. The contingency effects are in $G_{p \times k}$. The performance is $y_i$. 
 
-\begin{equation}
+\begin{aligned}
 \label{eq:management-function}
-y_i = x_i 
-\end{equation}
+y_i &= (b + z G) x + \frac{1}{2} x' A x \\
+&= b_Z + \frac{1}{2} x' A x \\
+\end{aligned}
 
 \section{Extensions to the base model}
 
